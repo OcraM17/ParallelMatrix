@@ -8,7 +8,7 @@ In order to analyze and find the right algorithm I have compared 3 matrix multip
 ## Multiplication algorithms
 The first method implemented is the row-column product. I have wrote this simple algorithm only to compare the performances of this easy-to-use method with more difficult but faster methods.
 The second algorithm is the product between a matrix A and the transposition of the matrix B. This method is very similar to the previous way but faster.
-The third one is the Strassen's method. This method, the faster among the three, 
+The third one is the Strassen's method. This method, the faster among the three, decompose each of the two matrices in 4 squared submatrices. These 8 submatrices are used to compute the final matrix result of the multiplication between the two original matrices. \
 In the file report.pdf is possible to see the complete analysis of the problem.
 
 
