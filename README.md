@@ -10,7 +10,8 @@ The first method implemented is the row-column product. I have wrote this simple
 The second algorithm is the product between a matrix A and the transposition of the matrix B. This method is very similar to the previous way but faster.
 The third one is the Strassen's method. This method, the faster among the three, decompose each of the two matrices in 4 squared submatrices. These 8 submatrices are used to compute the final matrix result of the multiplication between the two original matrices. The key of this algorithm is to work with smaller matrices and avoid at most as possible more computational expensive operations as (multiplication between matrices) using addition and subtraction between submatrices.
 ## Inversion Algorithms
-\
+Since the classical Cramer's method for matrix inversion (this method uses computes the disciminant to invert the matrix which is a computational expensive operation with huge matrices) is very unefficient I chose a decomposition strategy to compute this operation. The strategy selected is the LUP decomposition. This algorithm uses a permutation matrix P, a lower triangular matrix L and an upper triangular matrix U. in order to decompose the matrix to be inverted.
+## Optimization Strategies
 In the file report.pdf is possible to see the complete analysis of the problem.
 
 
