@@ -15,7 +15,7 @@ Since the classical Cramer's method for matrix inversion (this method uses compu
 The strategies followed were 2: Parallel For and Division in Task. A common approach of these two strategies was to store the matrix in memory as contiguous monodimensional arrays. This operation is critical when the dimensions grow because it avoids jumps in memory to retrieve matrix's elements.
 All the code was divided in function and the loops are parallelized, paying attention to critical sections (i.e. that section of code where the thread wrote on the same variable).
 
-
+## Results
 All the tests were computed serially and in parallel form on a Intel i7-4710HQ cpu@2.50 GHz (with 4 physical cores and 4 virtual cores) and using a virtual machine on the Google Cloud Platform with 24 physical cores.\
 In the file report.pdf is possible to see the complete analysis of the problem.
 
